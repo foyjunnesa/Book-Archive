@@ -16,13 +16,6 @@ const searchBook = () => {
 const displaySearchResult = docs => {
     const searchResult = document.getElementById('search-result')
     searchResult.textContent = '';
-    if (docs.length == 0) {
-        result = 'positive';
-    }
-    else {
-        result = 'NOT Found';
-    }
-    return result;
     docs.forEach(docs => {
         // console.log(docs);
         const div = document.createElement('div');
